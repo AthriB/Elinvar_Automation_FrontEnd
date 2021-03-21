@@ -6,7 +6,9 @@ This framework is built on cypress, with inclusion of Page Object Model.
 The framework has the capability to automatically capture screenshot on failure and video recording of the executed tests will be saved.
 This has a test to execute an api to set up a test data prior to the execution of the tests
 
-It majorly has 3 folders Integration, Plugin, Support
+It majorly has 4 folders Integration, Plugin, Support, Fixtures
+**Fixtures**
+Can be used as a centralized location to maintain the test data, or the default values like URLs.
 
 **Integration** 
 This folder has all the Feature files.
