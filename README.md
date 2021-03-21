@@ -61,3 +61,9 @@ to convert into an html report.
 execute the command `node cucumber-html-report.js`
 And the reports will be generated in the folder reports which can be opened in any browser.
 
+**Bash File for running the test on the mac**
+1. Open Terminal
+2. Go to the project path
+3.  run the command `sh elinvar_automation.sh`
+4.  The downloading of the node module, execution and report generation happens automatically.
+
