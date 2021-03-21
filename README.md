@@ -41,7 +41,7 @@ This will set up the servers both frontend and backend for the execution.
 
 **Before Execution of the Cypress automation suite**
 1. `npm install` --> installs all the dependencies
-2. **Reset the local database every time before the execution** --> This will set up the test data before execution. So Reset the database before executing.
+2. **Reset the local database, if a rerun of the suite is to be done** --> This will set up the test data before execution. So Reset the database before re executing suite.
 
 **Commands to execute in the terminal**
 1. Go to project folder and `npx cypress open`
