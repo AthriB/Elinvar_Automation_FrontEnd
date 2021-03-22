@@ -30,16 +30,26 @@ Number of retries on failures.
 **Fixtures**
 This has the file where in we can change the URL for the automation.
 
-**Prerequisites before the execution of the tests:**
-1. node modules
-2. Python as the database is in python
-3. flask has to be installed.
-4. Node.js has to be present in the system above v.10.
 
-**Setting up the local server before the test execution**
-1. go inside the website project folder execute `npm start`
-2. go inside the api folder and perform `flask run`
-This will set up the servers both frontend and backend for the execution.
+****How to Run******
+**Prerequisites before the execution of the tests:**
+1. Please make sure that the front end and backend servers of the project are up and running.
+2. The URL will be by default pointing to http://localhost:3000
+3. If Using a different URL Go to this project folder `/cypress/fixtures/example.json` change the URL in the example.json file.
+
+Executing the Suite
+**Bash File for running the test on the mac and windows**
+1. Open Terminal
+2. Go to the project path
+3.  run the command `sh elinvar_automation.sh` for mac.
+4.  Open the file `elinvar_automation.bat` in power shell to start the execution of the suite.
+5.  The downloading of the node module, execution and report generation happens automatically.
+
+**If you want to execute manually**
+1. Go to the project folder and perform `npm install` which installs all the dependencies related to cypress and cucumber.
+2. Once point 1 is complete execute the command `npx cypress run`
+3. To generate the reports after the execution run the command `node cucumber-html-report.js`
+
 
 **Before Execution of the Cypress automation suite**
 1. `npm install` --> installs all the dependencies
@@ -63,10 +73,5 @@ to convert into an html report.
 execute the command `node cucumber-html-report.js`
 And the reports will be generated in the folder reports which can be opened in any browser.
 
-**Bash File for running the test on the mac and windows**
-1. Open Terminal
-2. Go to the project path
-3.  run the command `sh elinvar_automation.sh` for mac.
-4.  Open the file `elinvar_automation.bat` in power shell to start the execution of the suite.
-5.  The downloading of the node module, execution and report generation happens automatically.
+
 
