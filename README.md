@@ -37,7 +37,8 @@ This has the file where in we can change the URL for the automation.
 2. The URL will be by default pointing to http://localhost:3000
 3. If Using a different URL Go to this project folder `/cypress/fixtures/example.json` change the URL in the example.json file.
 
-Executing the Suite
+**Executing the Suite**
+
 **Bash File for running the test on the mac and windows**
 1. Open Terminal
 2. Go to the project path
@@ -63,9 +64,9 @@ This command executes the tests in the headless mode.
 3. For headed mode use `npx cypress run --headed`
 
 **To use Different Browsers**
---browser firefox
---browser chrome
---browser chromium
+1. --browser firefox
+2. --browser chrome
+3. --browser chromium
 
 **To generate the report**
 .json files for each spec files will be generated after every complete run from the terminal in the folder cucumber-json
