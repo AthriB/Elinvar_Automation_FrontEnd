@@ -4,15 +4,15 @@ Technical assignment for Elinvar Automation testing using Cypress + Cucumber
 This is a cypress Automation testing framework with cucumber integration.
 This framework is built on cypress, with inclusion of Page Object Model.
 The framework has the capability to automatically capture screenshot on failure and video recording of the executed tests will be saved.
-This has a test to execute an api to set up a test data prior to the execution of the tests
 
-It majorly has 4 folders Integration, Plugin, Support, Fixtures
-**Fixtures**
+
+
+**Fixtures Folder**
 Can be used as a centralized location to maintain the test data, or the default values like URLs.
 
 **Integration** 
 This folder has all the Feature files.
-Step definition files inside the folders with the names of each Feature files.
+Step definition files inside the folders with the names of each Feature files. 
 
 **Support Page** 
 This folder has the Page objects w.r.t each pages of the Website.
@@ -23,6 +23,7 @@ This folder contains the plugin information for the Cucumber integration with cy
 
 **cypress.json **
 
+This file can be used to set the configuration, browser size and other settings.
 Includes the default timeout in milliseconds
 Number of retries on failures.
 
@@ -33,6 +34,7 @@ This has the file where in we can change the URL for the automation.
 1. node modules
 2. Python as the database is in python
 3. flask has to be installed.
+4. Node.js has to be present in the system above v.10.
 
 **Setting up the local server before the test execution**
 1. go inside the website project folder execute `npm start`
