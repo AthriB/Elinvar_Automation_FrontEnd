@@ -1,0 +1,143 @@
+[
+  {
+    "description": "    Landing page consists of three tabs Description,Add asset, existing assets also has the requirement.",
+    "keyword": "Feature",
+    "name": "Landing page of the Frontend test-developer technical Assignment",
+    "line": 1,
+    "id": "landing-page-of-the-frontend-test-developer-technical-assignment",
+    "tags": [],
+    "uri": "TS002_LandingPage.feature",
+    "elements": [
+      {
+        "id": "landing-page-of-the-frontend-test-developer-technical-assignment;verify-the-headers-and-subheaders-of-the-landing-page.",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify the Headers and Subheaders of the Landing page.",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is on the landing Page",
+            "result": {
+              "status": "passed",
+              "duration": 2838000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The main header should be Frontend test-developer technical assignment",
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "The sub header should be System Requirements",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The tabs titles should be mentioned as Description,Add Asset and existing asset.",
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "landing-page-of-the-frontend-test-developer-technical-assignment;verify-the-user-ability-to-navigate-to-add-asset-tab",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify the user ability to Navigate to Add Asset Tab",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on the landing Page",
+            "result": {
+              "status": "passed",
+              "duration": 791000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User Clicks on the Add Asset Tab",
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "The User should be navigated to Add Asset Tab",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "landing-page-of-the-frontend-test-developer-technical-assignment;verify-the-user-ability-to-navigate-to-existing-assets-tab",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify the user ability to Navigate to Existing Assets Tab",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "User is on the landing Page",
+            "result": {
+              "status": "passed",
+              "duration": 555000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User clicks on the Exisitng Asset Tab",
+            "result": {
+              "status": "passed",
+              "duration": 227000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "The User should be navigated to Existing Asset Tab",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

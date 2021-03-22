@@ -1,0 +1,224 @@
+[
+  {
+    "description": "    The Assets can be added with the combination of 4 alphabets and 10 Numbers",
+    "keyword": "Feature",
+    "name": "Addition of the asset information",
+    "line": 1,
+    "id": "addition-of-the-asset-information",
+    "tags": [],
+    "uri": "TS003_AddAsset.feature",
+    "elements": [
+      {
+        "id": "addition-of-the-asset-information;addition-of-the-asset-in-the-given-format.",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Addition of the Asset in the given format.",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "The User is on Add asset page",
+            "result": {
+              "status": "passed",
+              "duration": 2062000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "The user enters the asset name and clicks on Send",
+            "result": {
+              "status": "passed",
+              "duration": 1601000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The Asset should be created and the message should be shown",
+            "result": {
+              "status": "passed",
+              "duration": 190000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "addition-of-the-asset-information;addition-of-asset-which-is-already-present",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Addition of Asset which is already present",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "The User is on Add asset page",
+            "result": {
+              "status": "passed",
+              "duration": 632000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "The user Enters an existing Asset Name and click on Send",
+            "result": {
+              "status": "passed",
+              "duration": 643000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Asset already exists error message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 1466000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "addition-of-the-asset-information;addition-of-the-asset-in-wrong-formats",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Addition of the Asset in wrong formats",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "The User is on Add asset page",
+            "result": {
+              "status": "passed",
+              "duration": 1107000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "names123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "abcdefghijklmn"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "qwertyuiop1234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "qwe12345678900"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "12345678901234"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1234NAME123412"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1234567890NAME"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "QWERTYUIOPQWER"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "NAMES1234NAMES"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "!@#$%^&*()_+{}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "The user Enters the Name of the Assets in wrong formats and validates",
+            "result": {
+              "status": "passed",
+              "duration": 18179000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "addition-of-the-asset-information;ui-check-for-the-pop-ups",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "UI check for the Pop Ups",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "The User is on Add asset page",
+            "result": {
+              "status": "passed",
+              "duration": 1316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "The user enters the asset name and clicks on Send",
+            "result": {
+              "status": "passed",
+              "duration": 1623000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "The asset should be added with a success message displayed",
+            "result": {
+              "status": "failed",
+              "duration": 15023000000,
+              "error_message": "AssertionError: Timed out retrying after 15000ms: expected '<div.modal-header>' to have text 'Success', but the text was 'Sucssess×'\n    + expected - actual\n\n    -'Sucssess×'\n    +'Success'\n\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/BDD/TS003_AddAsset.feature:91:41)\n    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/BDD/TS003_AddAsset.feature:10729:9)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/BDD/TS003_AddAsset.feature:10070:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

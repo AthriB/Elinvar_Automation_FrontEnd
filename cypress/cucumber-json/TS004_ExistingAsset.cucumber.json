@@ -1,0 +1,243 @@
+[
+  {
+    "description": "    User will be able to see the existing asset, search asset, sort asset, filter asset",
+    "keyword": "Feature",
+    "name": "User will be able to see the Existing Asset",
+    "line": 1,
+    "id": "user-will-be-able-to-see-the-existing-asset",
+    "tags": [],
+    "uri": "TS004_ExistingAsset.feature",
+    "elements": [
+      {
+        "id": "user-will-be-able-to-see-the-existing-asset;searching-for-an-already-existing-asset",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Searching for an already existing asset",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User creates an Asset and navigates to existing assets Tab",
+            "result": {
+              "status": "passed",
+              "duration": 4065000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User enters the asset name and searches for the existing asset",
+            "result": {
+              "status": "passed",
+              "duration": 660000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The Searched asset should be visible for the User",
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-will-be-able-to-see-the-existing-asset;searching-for-a-asset-which-is-not-present-at-all",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Searching for a asset which is not present at all",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "The user is on the existing asset page",
+            "result": {
+              "status": "passed",
+              "duration": 1044000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters an asset name which does not exist and searches",
+            "result": {
+              "status": "passed",
+              "duration": 6629000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "No Matching Records found message should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-will-be-able-to-see-the-existing-asset;verifying-the-sorting-of-the-names-by-ascending",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verifying the sorting of the Names by Ascending",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "The user is on the existing asset page",
+            "result": {
+              "status": "passed",
+              "duration": 519000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User clicks on the name to sort the table in the ascending order of the names",
+            "result": {
+              "status": "passed",
+              "duration": 1150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "The table should be sorted in the ascending order",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-will-be-able-to-see-the-existing-asset;verifying-the-sorting-of-the-names-by-descending",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verifying the sorting of the Names by Descending",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "The user is on the existing asset page",
+            "result": {
+              "status": "passed",
+              "duration": 521000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User clicks on the Name twice to sort the table in the descending order of the Names",
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "The table should be sorted in the descending order",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-will-be-able-to-see-the-existing-asset;filtering-with-different-counts-per-page",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Filtering with Different counts per page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "The user is on the existing asset page",
+            "result": {
+              "status": "passed",
+              "duration": 509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "User clicks on next page and previous page buttons",
+            "result": {
+              "status": "passed",
+              "duration": 3520000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "number"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "10"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "20"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "50"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "100"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 28,
+            "name": "User Selects Number of assets per page to display and only that number of assets will be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 995000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

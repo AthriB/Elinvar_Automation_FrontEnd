@@ -1,0 +1,73 @@
+[
+  {
+    "description": "    Adding Dummy data into the Database before execution.",
+    "keyword": "Feature",
+    "name": "Preparing test Data using the API before the execution of the Scenarios",
+    "line": 1,
+    "id": "preparing-test-data-using-the-api-before-the-execution-of-the-scenarios",
+    "tags": [],
+    "uri": "TS001_TestDataPrep.feature",
+    "elements": [
+      {
+        "id": "preparing-test-data-using-the-api-before-the-execution-of-the-scenarios;preperation-of-the-test-data-by-adding-multiple-dummy-data-on-to-the-database.",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Preperation of the test data by adding multiple dummy Data on to the database.",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User has dummy data in the database before the execution of the tests",
+            "result": {
+              "status": "passed",
+              "duration": 2707000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "preparing-test-data-using-the-api-before-the-execution-of-the-scenarios;adding-asset-name-to-verify-for-the-ascending-sort(this-test-will-fail-if-the-same-entry-is-already-present)",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Adding asset name to verify for the Ascending sort(This test will fail if the same entry is already present)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "User has Asset Name AAAA0000000000 to check sorting by Ascending using API",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "preparing-test-data-using-the-api-before-the-execution-of-the-scenarios;adding-asset-name-to-verify-for-the-descending-sort(this-test-will-fail-if-the-same-entry-is-already-present)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Adding asset name to verify for the Descending sort(This test will fail if the same entry is already present)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "User has Asset Name ZZZZ9999999999 to check sorting by Descending using API",
+            "result": {
+              "status": "passed",
+              "duration": 71000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
