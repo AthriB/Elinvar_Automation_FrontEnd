@@ -2,6 +2,13 @@ Feature: Addition of the asset information
 
     The Assets can be added with the combination of 4 alphabets and 10 Numbers
 
+    #This is lacking most important scenario, namely
+    #Scenario: E2E case (or some better name :) )
+    #   Given I am on Add asset page
+    #   And I add new asset ISIN00001
+    #   Then I navigate to exisitign asset page
+    #   And newly created Asset is visible in asset table 
+
     Scenario: Addition of the Asset in the given format.
         Given The User is on Add asset page
         When The user enters the asset name and clicks on Send
