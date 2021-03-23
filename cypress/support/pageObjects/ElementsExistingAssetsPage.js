@@ -30,6 +30,7 @@ class ElementsExistingAssetsPage {
     return cy.get("td");
   }
 
+  //Better to use parents/child relations rahter then xpaths
   getFirstRowWhenSorted() {
     return cy.get(":nth-child(1) > td");
   }
