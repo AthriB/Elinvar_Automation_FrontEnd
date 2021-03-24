@@ -7,28 +7,37 @@ const LandingPage = new ElementsLandingPage();
 const AddAssetPage = new ElementsAddAssetPage();
 const ExistingAssetPage = new ElementsExistingAssetsPage();
 
-let Number = Math.floor(Math.random() * 10000000000);
-console.log(Number);
-if (Number < 999999999) Number = Number + 1000000000;
-console.log(Number);
+let id = 10000000000
+let Number = Math.floor(Math.random() * id);
+// Stick same style. Either start all vars with capital and don't mix conventions 
+// Remove
+// console.log(Number);
+if (Number < id - 1) Number = Number + id;
+//remove 
+// console.log(Number);
+//Avoid using global variables whenever possible
 const Name = `EXIS${Number}`;
 
-Given(
-  /^User creates an Asset and navigates to existing assets Tab$/,
-  function () {
+//1. Better use following Given('I....  {string} ... ',(variable) => { .. code ..})
+//   That will make code much more readble.
+//2. Avoid entering redundant new lines
+//3. Keep gherkin statements and short clean. See more comments in feature files
+//4. Combine-ing AND statement in single statment not a good idea 
+Given('User creates an Asset {string}',(name) => {
     //Navigating to the Add Asset Page from Landing Page
-    cy.visit(this.data.baseURL);
+     
+    //cy.visit always navigates to baseURL provided in cypress.json
+    cy.visit(this.data.baseURL); //Not needed.
     LandingPage.getAddAssetTab().click();
     //Creating asset to search in the search box
-    AddAssetPage.getAddAssetField().type(Name);
+    AddAssetPage.getAddAssetField().type(name);
     AddAssetPage.getSendButton().click();
-    cy.wait(1000);
+    cy.wait(1000);  //Why? Avoid explicit waits. 
     AddAssetPage.getSuccessMessageCloseButton().click();
 
     // Navigating to the Existing Assets page
     LandingPage.getExistingAssetTab().click();
-  }
-);
+});
 
 When(
   /^User enters the asset name and searches for the existing asset$/,
@@ -46,6 +55,7 @@ Given(/^The user is on the existing asset page$/, function () {
   LandingPage.getExistingAssetTab().click();
 });
 
+//Provide harcoded values from feature file, not in JS code 
 When(
   /^User enters an asset name which does not exist and searches$/,
   function () {

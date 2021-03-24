@@ -1,8 +1,13 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 
+//Better to create cy. command for that not the test feature file.
+//eg. Cypress.Commands.add("addStubData", () => { ... })
 Given(
   /^User has dummy data in the database before the execution of the tests$/,
   function () {
+    //avoid using arbitary numbers. Use named literals(variables instead)
+    //let num_entries = 120
+    //let isin_base = 10000000000
     for (let i = 0; i <= 120; i++) {
       const Number = Math.floor(Math.random() * 10000000000);
       console.log(Number);
